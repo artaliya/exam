@@ -11,6 +11,7 @@
     <groupId>com.exam</groupId>
     <artifactId>exam</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>exam</name>
     <description>exam</description>
     <properties>
@@ -36,6 +37,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <finalName>${project.artifactId}-${project.version}</finalName>
     </build>
 
 </project>
