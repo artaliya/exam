@@ -1,7 +1,8 @@
-package com.maintenance.maintenancemonitor.test;
+package com.exam.exam.test;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Test {
 
     @GetMapping("/message")
-    public String message() {
-        return "Hello!!!";
+    public String message(@RequestParam String name) {
+        return "Hello, " + name + "!!!";
     }
 }
