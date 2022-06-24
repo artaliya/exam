@@ -23,7 +23,6 @@ public class DateTimeController {
 
     @GetMapping("/now")
     public String getNowTime(@RequestParam String format) {
-        System.out.println(format);
         return dateTimeService.getNowTime(format);
     }
 }
