@@ -23,7 +23,7 @@ public class DateTimeServiceImpl implements DateTimeService {
     public String getNowTime(String format) {
         LocalDateTime myDateObj = LocalDateTime.now();
 
-        DateTimeFormatter myFormatObj = null;
+        DateTimeFormatter myFormatObj;
 
         if (format.equals(HOURS_MINUTES_QUOTED)) {
             myFormatObj = DateTimeFormatter.ofPattern(HOURS_MINUTES);
